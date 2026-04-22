@@ -1,0 +1,66 @@
+{
+  "repo_notes": [
+    {
+      "content": ""
+    }
+  ],
+  "pages": [
+    {
+      "title": "DeepWiki-Open Overview",
+      "purpose": "High-level introduction to DeepWiki-Open: what it does, its two-stack architecture (Next.js frontend + FastAPI backend), key capabilities (wiki generation, RAG-powered Ask, Deep Research, Workshop/Slides), and how to navigate the wiki. Links to all major child sections.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "purpose": "Setup and installation guide covering Docker Compose deployment, local development (Python + Node.js), environment variables (API keys, auth mode, embedder type), and the run.sh / start.sh entrypoints.",
+      "parent": "DeepWiki-Open Overview",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "System Architecture",
+      "purpose": "Overview of the full system architecture: how the Next.js frontend, FastAPI backend, data pipeline, and LLM providers fit together. Introduces the two-stage wiki generation pipeline and the RAG subsystem. Links to child pages for deeper dives.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "RAG Engine",
+      "purpose": "Deep dive into api/rag.py: the RAG class, Memory/DialogTurn conversation state, FAISSRetriever initialization, embedding validation (_validate_and_filter_embeddings), the RAGAnswer schema, and how retrieved context is injected into LLM prompts.",
+      "parent": "System Architecture",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Wiki Generation Pipeline",
+      "purpose": "Overview of the two-stage wiki generation process: structure determination (LLM produces WikiStructure XML) followed by concurrency-controlled per-page content generation. Links to child pages covering the frontend orchestration and streaming chat.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Wiki Cache System",
+      "purpose": "How generated wikis are persisted and retrieved. Covers the server-side file cache (~/.adalflow/wikicache), cache naming conventions, GET/POST/DELETE /api/wiki_cache endpoints, client-side localStorage fallback, and the processed projects listing.",
+      "parent": "Wiki Generation Pipeline",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
