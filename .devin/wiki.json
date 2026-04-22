@@ -1,64 +1,63 @@
 {
   "repo_notes": [
     {
-      "content": ""
+      "content": "",
+      "author": null
     }
   ],
   "pages": [
     {
-      "title": "DeepWiki-Open Overview",
-      "purpose": "High-level introduction to DeepWiki-Open: what it does, its two-stack architecture (Next.js frontend + FastAPI backend), key capabilities (wiki generation, RAG-powered Ask, Deep Research, Workshop/Slides), and how to navigate the wiki. Links to all major child sections.",
+      "title": "项目概述",
+      "purpose": "介绍其功能、技术栈、核心能力（Wiki生成、基于RAG的提问等），以及如何使用Wiki",
+      "parent": null,
       "page_notes": [
         {
-          "content": ""
+          "content": "",
+          "author": null
         }
       ]
     },
     {
-      "title": "Getting Started",
-      "purpose": "Setup and installation guide covering Docker Compose deployment, local development (Python + Node.js), environment variables (API keys, auth mode, embedder type), and the run.sh / start.sh entrypoints.",
-      "parent": "DeepWiki-Open Overview",
+      "title": "快速入门",
+      "purpose": "开发和安装指南，涵盖开发环境部署、本地开发",
+      "parent": "项目概述",
       "page_notes": [
         {
-          "content": ""
+          "content": "",
+          "author": null
         }
       ]
     },
     {
-      "title": "System Architecture",
-      "purpose": "Overview of the full system architecture: how the Next.js frontend, FastAPI backend, data pipeline, and LLM providers fit together. Introduces the two-stage wiki generation pipeline and the RAG subsystem. Links to child pages for deeper dives.",
+      "title": "系统架构",
+      "purpose": "完整介绍系统架构概览，包含前端、后端、数据管道和大型语言模型等，以及如何协同工作",
+      "parent": null,
       "page_notes": [
         {
-          "content": ""
+          "content": "",
+          "author": null
         }
       ]
     },
     {
-      "title": "RAG Engine",
-      "purpose": "Deep dive into api/rag.py: the RAG class, Memory/DialogTurn conversation state, FAISSRetriever initialization, embedding validation (_validate_and_filter_embeddings), the RAGAnswer schema, and how retrieved context is injected into LLM prompts.",
-      "parent": "System Architecture",
+      "title": "业务逻辑",
+      "purpose": "深入介绍项目的核心业务流程",
+      "parent": "null",
       "page_notes": [
         {
-          "content": ""
+          "content": "",
+          "author": null
         }
       ]
     },
     {
-      "title": "Wiki Generation Pipeline",
-      "purpose": "Overview of the two-stage wiki generation process: structure determination (LLM produces WikiStructure XML) followed by concurrency-controlled per-page content generation. Links to child pages covering the frontend orchestration and streaming chat.",
+      "title": "核心模块",
+      "purpose": "对照系统架构，对每一个核心模块进行深入解析",
+      "parent": null,
       "page_notes": [
         {
-          "content": ""
-        }
-      ]
-    },
-    {
-      "title": "Wiki Cache System",
-      "purpose": "How generated wikis are persisted and retrieved. Covers the server-side file cache (~/.adalflow/wikicache), cache naming conventions, GET/POST/DELETE /api/wiki_cache endpoints, client-side localStorage fallback, and the processed projects listing.",
-      "parent": "Wiki Generation Pipeline",
-      "page_notes": [
-        {
-          "content": ""
+          "content": "",
+          "author": null
         }
       ]
     }
